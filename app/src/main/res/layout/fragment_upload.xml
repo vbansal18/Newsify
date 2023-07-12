@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.UploadFragment"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/btn_go_back"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@color/white"
+        android:contentDescription="@string/go_back_btn"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:text="@string/upload_image"
+            android:layout_weight="0.1"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"/>
+
+        <ImageView
+            android:id="@+id/img_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/upload_image"
+            android:src="@drawable/welcome"/>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="0.6"
+            android:layout_height="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_select_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_image"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_marginTop="50dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/select_image_btn"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_image"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/gradient_btn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
